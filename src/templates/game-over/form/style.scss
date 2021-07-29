@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    margin-block-end: 30rem;
+
+    label {
+      text-transform: capitalize;
+      margin-block-end: 5px;
+      display: inline-block;
+    }
+
+    input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}

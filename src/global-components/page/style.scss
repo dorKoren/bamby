@@ -1,0 +1,33 @@
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-inline: 20px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1400px; */
+    margin-inline: auto;
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+}

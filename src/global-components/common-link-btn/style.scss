@@ -1,0 +1,30 @@
+.common-link-btn {
+  --background-color: #e0e0e0;
+  --hover-background-color: #d5d5d5;
+  --shadow-1-color: rgba(0, 0, 0, 20%);
+  --shadow-2-color: rgba(0, 0, 0, 14%);
+  --shadow-3-color: rgba(0, 0, 0, 12%);
+
+  padding: 6px 16px;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms ease-in-out 0ms,
+    box-shadow 250ms ease-in-out 0ms, border 250ms ease-in-out 0ms;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: var(--black);
+
+  box-shadow: 0px 3px 1px -2px var(--shadow-1-color),
+    0px 2px 2px 0px var(--shadow-2-color), 0px 1px 5px 0px var(--shadow-3-color);
+  background-color: var(--background-color);
+
+  &:active {
+    box-shadow: initial;
+  }
+
+  &:hover {
+    background-color: var(--hover-background-color);
+  }
+}

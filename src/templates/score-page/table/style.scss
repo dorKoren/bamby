@@ -1,0 +1,44 @@
+@import "../../../global-styles/breakpoints/";
+
+.table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid var(--white);
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  padding: 10px 15px;
+
+  @media #{$tablet}, #{$desktop} {
+    text-align: center;
+  }
+}
+
+th {
+  text-transform: uppercase;
+}
+
+tbody td {
+  @media #{$mobile} {
+    display: block;
+
+    &::before {
+      content: attr(data-title) ":";
+      margin-inline-end: 20px;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}
+
+thead {
+  @media #{$mobile} {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.guess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 40rem;
+
+  label {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  #guess-input {
+    background-color: transparent;
+    text-align: center;
+    color: var(--white);
+    border: none;
+    border: 2px solid;
+    width: 80rem;
+    height: 80rem;
+    margin-bottom: 40rem;
+    border-radius: 5px;
+    font-size: 60rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

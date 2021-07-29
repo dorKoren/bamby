@@ -1,0 +1,21 @@
+.random-word {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
+  justify-content: flex-start;
+  margin-block-end: 30rem;
+  width: 100%;
+
+  &__letter {
+    width: 50rem;
+    height: 50rem;
+    font-size: 45rem;
+    border-block-end: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+
+    &--space {
+      border-block-end-width: 0px;
+    }
+  }
+}
